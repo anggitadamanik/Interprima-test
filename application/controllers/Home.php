@@ -18,7 +18,7 @@ class Home extends REST_Controller
     }
     function index_get()
     {
-        $kontak = [
+        $kontak = [ //data
             ['id' => 1, 'name' => 'Orion', 'hp' => '08576666762'],
             ['id' => 2, 'name' => 'Mars', 'hp' => '08576666770'],
             ['id' => 3, 'name' => 'Alpha', 'hp' => '08576666765']
