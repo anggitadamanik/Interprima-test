@@ -18,15 +18,15 @@ class Users_story extends REST_Controller
     function index_post()
     {
         $users = [
-            'Username' => $this->post('Username'),
-            'Balance' => 100000,
-            'Transfer' => 'empty transfer records'
+            'Username' => $this->post('Username'), //parameter
+            'Balance' => 100000, //body
+            'Transfer' => 'empty transfer records' //body
         ];
         if ($users) {
             $this->response([
                 'success' => true,
                 'data' => [
-                    'Accountnumber' => random_string('numeric', 12)
+                    'Accountnumber' => random_string('numeric', 12) //random system type string
                 ],
             ], REST_Controller::HTTP_CREATED);
         } else {
